@@ -1,0 +1,11 @@
+@media (max-width: 640px) {
+	.mt4-banner-ru {
+		background-position: 36% top !important;
+		background-size: 100rem !important;
+	}
+}
+
+.start__num {
+	left: 47%;
+	transform: translate(-50%, 0%);
+}
