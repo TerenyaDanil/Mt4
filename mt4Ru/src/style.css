@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "SegoeUI";
+		font-display: swap;
+		src: url("/website_snippets/static/src/mt4/fonts/Segoe_UI_Semibold.woff") format("woff"),
+			url("fonts/Segoe_UI_Semibold.woff2") format("woff2");
+		font-weight: 600;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "futuramediumc";
+		font-display: swap;
+		src: url("/website_snippets/static/src/mt4/fonts/futuramediumc.woff") format("woff"),
+			url("../fonts/futuramediumc.woff2") format("woff2");
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "TimeNewRoman";
+		font-display: swap;
+		src: url("/website_snippets/static/src/mt4/fonts/TimeNewRoman.woff") format("woff"),
+			url("../fonts/TimeNewRoman.woff2") format("woff2");
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@media (min-width: 1537px) {
+		html {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 1536px) {
+		html {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 1280px) {
+		html {
+			font-size: calc((14 / 1024) * 100vw);
+		}
+	}
+	@media (max-width: 1023px) {
+		html {
+			font-size: calc((14 / 768) * 100vw);
+		}
+	}
+	@media (max-width: 640px) {
+		html {
+			font-size: calc((14 / 390) * 100vw);
+		}
+	}
+
+	/* body,
+	h1,
+	h2,
+	h3 {
+		font-family: SegoeUI !important;
+	} */
+}
+
+@layer components {
+	.form {
+		@apply bg-black bg-opacity-70 pt-10 pb-14 px-5 sm:w-1/2 sm:pt-10 sm:max-w-sm sm:pr-5 sm:pl-14 lg:py-16 lg:px-12 lg:max-w-sm xl:max-w-md xl:p-16;
+	}
+	.input {
+		@apply py-3 px-4 block font-semibold text-white text-lg bg-black w-full sm:py-3 sm:px-5 lg:text-base xl:text-lg border-solid border rounded;
+	}
+}
+
+@layer utilities {
+	.form_blue-color {
+		background: #17a2b8;
+	}
+
+	.font-roboto {
+		font-family: Roboto;
+	}
+	.font-time {
+		font-family: TimeNewRoman;
+	}
+	.font-fut {
+		font-family: futuramediumc;
+	}
+	.rtl {
+		direction: rtl;
+	}
+	.step2-list li {
+		list-style: none;
+	}
+
+	.step2-list li:before {
+		content: " -";
+	}
+}
+
+/* 
+/website_snippets/static/src/mt4/
+/website_snippets/static/src/mt4/
+/website_snippets/static/src/mt4/
+/website_snippets/static/src/mt4/ */
