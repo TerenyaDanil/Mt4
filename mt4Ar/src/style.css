@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "SegoeUI";
+		font-display: swap;
+		src: url("/website_snippets/static/src/mt4/fonts/Segoe_UI_Semibold.woff") format("woff"),
+			url("fonts/Segoe_UI_Semibold.woff2") format("woff2");
+		font-weight: 600;
+		font-style: normal;
+	}
+
+	@media (min-width: 1921px) {
+		html {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 1920px) {
+		html {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 1280px) {
+		html {
+			font-size: calc((14 / 1024) * 100vw);
+		}
+	}
+	@media (max-width: 1023px) {
+		html {
+			font-size: calc((14 / 768) * 100vw);
+		}
+	}
+	@media (max-width: 640px) {
+		html {
+			font-size: calc((14 / 390) * 100vw);
+		}
+	}
+
+	body,
+	h1,
+	h2,
+	h3 {
+		font-family: SegoeUI !important;
+	}
+}
+
+@layer components {
+	.form {
+		@apply bg-black bg-opacity-70 pt-10 pb-14 px-5 sm:w-1/2 sm:pt-10 sm:max-w-sm sm:pr-5 sm:pl-14 lg:py-16 lg:px-12 lg:max-w-sm xl:max-w-md xl:p-16;
+	}
+	.input {
+		@apply py-3 px-4 block font-semibold text-white text-lg bg-black w-full sm:py-3 sm:px-5 lg:text-base xl:text-lg border-solid border rounded;
+	}
+}
+
+@layer utilities {
+	.form_blue-color {
+		background: #17a2b8;
+	}
+
+	.fonr-roboto {
+		font-family: Roboto;
+	}
+	.rtl {
+		direction: rtl;
+	}
+	.step2-list li {
+		list-style: none;
+	}
+
+	.step2-list li:before {
+		content: " -";
+	}
+	.mt4-banner {
+		background-position: 63% top !important;
+		background-size: 120rem !important;
+	}
+	.start__num {
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.roboto {
+		font-family: Roboto;
+	}
+}
+
+@screen sm {
+	.mt4-banner {
+		background-position: center top !important;
+		background-size: cover !important;
+	}
+}
+
+/* 
+/website_snippets/static/src/mt4/
+/website_snippets/static/src/mt4/
+/website_snippets/static/src/mt4/
+/website_snippets/static/src/mt4/ */
